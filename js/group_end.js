@@ -1,0 +1,1 @@
+Tools.resize_figure_img('#group .musicos figure', 'queryAll');

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 
+    lang list: default, fr (be & fr), nl (be & nl), en (us & en), de
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- default lang -->
+	<url>
+    	<loc>http://www.swingshift.be</loc>
+    </url>
+	<url>
+    	<loc>http://www.swingshift.be?page=group</loc>
+    </url>
+	<url>
+    	<loc>http://www.swingshift.be?page=diary</loc>
+    </url>
+	<url>
+    	<loc>http://www.swingshift.be?page=diary&amp;id=</loc>
+    </url>
+	<url>
+    	<loc>http://www.swingshift.be?page=gallery</loc>
+    </url>
+	<url>
+    	<loc>http://www.swingshift.be?page=gallery&amp;id=</loc>
+    </url>
+	<url>
+    	<loc>http://www.swingshift.be?page=demos</loc>
+    </url>
+	<url>
+    	<loc>http://www.swingshift.be?page=technical</loc>
+    </url>
+	<url>
+    	<loc>http://www.swingshift.be?page=contact</loc>
+    </url>
+</urlset>

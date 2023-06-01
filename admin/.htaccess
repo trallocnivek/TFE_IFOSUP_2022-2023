@@ -1,0 +1,5 @@
+# HTACCESS ADMIN/CONFIG
+#AuthName "Pages d'administration protégée !"
+#AuthType Basic
+#AuthUserFile "/home/swingst/www/admin/.htpasswd"
+#Require valid-user

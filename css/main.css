@@ -1,0 +1,694 @@
+/**
+ * @site Kadoremi
+ * @domain http(s)://www.kadoremi.be
+ * @authors Collart Kevin & Sanchez Falcon Frederic
+ * @version 2020/07/28 to 08h19
+ */
+/* FONT */
+@font-face{
+  	font-family: "IcoFont";
+	font-style: "Regular";
+	font-weight: normal;
+	src: url("../font/icofont.woff2") format("woff2"),
+		 url("../font/icofont.woff") format("woff");
+}
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 400;
+    font-display:auto;
+    src: url(../font/fa-regular-400.eot);
+    src: url(../font/fa-regular-400.eot?#iefix) format("embedded-opentype"),
+    	 url(../font/fa-regular-400.woff2) format("woff2"),
+    	 url(../font/fa-regular-400.woff) format("woff"),
+    	 url(../font/fa-regular-400.ttf) format("truetype"),
+    	 url(../font/fa-regular-400.svg#fontawesome) format("svg");
+}
+/* ICON FONT */
+.fa,.fab,.fal,.far,.fas {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+.fa,.far,.fas {
+    font-family: "Font Awesome 5 Free";
+}
+.fa,.fas {
+    font-weight: 400;
+}
+.fa-edit:before{
+    content: "\f044"
+}
+.icon{
+    font-family: IcoFont;
+    font-style: normal;
+}
+.icofont-check-circle:before{
+    content:"\eed7";
+}
+.icofont-close-circle:before{
+    content: '\eedd';
+}
+.icofont-email-circle:before{
+    content: '\ef12';
+}
+/* UTILS */
+.flex{
+    display: -ms-flexbox;
+    display: flex;
+}
+.center{
+	margin: auto;
+	text-align: center;
+}
+.inline-blox{
+    display: inline-block !important;
+}
+.center_box{
+    margin: auto;
+}
+.pointer{
+	cursor: pointer !important;
+}
+.hide{
+	display: none !important;
+}
+.no_margin_l-r{
+    margin-left: 0;
+    margin-right: 0;
+}
+.relative{
+    position: relative;
+}
+.required::after{
+    content: " *";
+    color: red;
+}
+.red{
+    color: red;
+}
+.pager{
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem 0 0.5rem 0;
+    /*background-color: salmon;*/
+}
+/* SITE STRUCTURE */
+/* TOPBAR */
+#topbar{
+	position: relative;
+	font-family: verdana;
+	background-color: transparent;
+	max-width: 100%;
+}
+#logo{
+	width: 22.5%;
+	transition: filter 0.2s ease-in-out;
+}
+#logo:hover{
+	filter: grayscale(50%);
+}
+#logo img{
+	width: 100%;
+}
+#login{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	width: 30%;
+}
+.topnav {
+    right: 0;
+    margin-top: 5%;
+    height: auto;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    background-color: darkred;
+}
+.topnav a {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.topnav a:first-of-type{
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+.topnav a:nth-of-type(2){
+    margin-left: -6px;
+}
+.topnav a:hover{
+	background-color: burlywood;
+    color: black;
+}
+#login a.active{
+    background-color: burlywood;
+}
+#lang{
+    display: inline-block;
+	float: right;
+	margin-right: 0;
+	padding: 15px 0;
+	width: 3.9rem;
+	font-size: 16px;
+    text-align: center;
+	color: white;
+    background-color: darkred;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+#lang:hover{
+	background-color: burlywood;
+    color: black;
+}
+#lang_i{
+	position: absolute;
+	top: 60px;
+	right: 0;
+	width: 3.9rem;
+  	font-family: 'IcoFont' !important;
+  	font-variant: normal;
+  	font-weight: normal;
+  	font-style: normal;
+	font-size: 2.5rem;
+	text-align: center;
+  	text-transform: none;
+  	line-height: 1;
+  	word-wrap: normal;
+  	white-space: nowrap;
+  	direction: ltr;
+	color: darkred;
+	background-color: transparent;
+  	speak: none;
+	/* Better Font Rendering =========== */
+  	-webkit-font-feature-settings: "liga";
+  	-webkit-font-smoothing: antialiased;
+}
+#lang_i:before{
+	content: "\ea67";
+}
+#select_lang{
+	position: absolute;
+	top: 90px;
+	right: 0;
+	padding: 0;
+	border: 1px solid transparent;
+	font-size: 15px;
+	background-color: transparent;
+	visibility: hidden;
+	z-index: 99999;
+	transition: border-color 2s ease-in-out, background-color 2s ease-in-out;
+}
+#select_lang a{
+	display: block;
+	width: 100%;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	color: darkred;
+	background-color: transparent;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+#select_lang a:hover{
+	color: white;
+	background-color: darkred;
+}
+/* RETURN PAGE */
+.upReturn{
+    display: inline-block;
+    position: relative;
+    margin-top:2vh;
+    padding: 0 10px 0 0;
+}
+.upReturn div img{
+    width: 2.25rem;
+}
+.upReturn div {
+    display: inline-block;
+    position: relative;
+    margin-left: 0.5vw;
+    font-size: 150%;
+    cursor: pointer;
+    color: darkred;
+}
+.upReturn div:nth-of-type(1){
+    padding-bottom: 3px;
+}
+.upReturn div:nth-of-type(2) a{
+    padding-top: 3px;
+}
+.upReturn a{
+    top: 2px;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+.upReturn a:hover{
+    color: burlywood !important;
+}
+/* NAV */
+#main_nav{
+    margin: 1rem 0 1rem 0;
+    overflow: hidden;
+    background-color: darkred;
+    font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+#main_nav ul{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: darkred;
+}
+#main_nav li{
+    list-style: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: inline-block;
+}
+#main_nav li a{
+    display: block;
+    background-color: darkred;
+    color: white;
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+#main_nav li a:hover, #main_nav li.active a:hover{
+    background-color: burlywood;
+    color: black;
+}
+#main_nav li.active a{
+    background-color: burlywood;
+    color: white;
+}
+/* FOOTER */
+footer{
+    display: block;
+    font-family: verdana;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-color: darkred;
+}
+#conditions{
+    display: inline-block;
+    background-color: transparent;
+}
+footer a{
+    display: block;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    text-decoration: none !important;
+    text-align: center;
+    color: white;
+    background-color: darkred;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+footer a:hover{
+    background-color: burlywood;
+    color: black;
+}
+/* HOME */
+.slogan #explain{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    color: burlywood;
+}
+#home{
+	font-size: 180%;
+	text-align: center;
+}
+#home .home_div{
+	margin-top: 15px;
+}
+.our-team-main{
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 2px silver solid;
+    background: #fff;
+    overflow: hidden;   
+}
+.our-team-main img{
+    width: 100%;
+}
+.our-team-main h3{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-family: verdana;
+    font-size: 22px;
+    font-weight: bold;
+    color: darkred;
+    background-color: white;
+}
+.our-team-main .h31{
+    text-align: left;
+}
+.our-team-main .h32{
+    text-align: right;
+}
+.our-team-main .h321{
+    padding-left: 10px;
+}
+.our-team-main .h322{
+    padding-right: 10px;
+}
+.our-team-main .explain{
+    padding: 15px;
+    font-family: verdana;
+    font-weight: bolder;
+    font-size: 80%;
+    color: darkred;
+    background-color: moccasin;
+}
+.team-back{
+    position: absolute;
+    top: 4.7rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+	font-size: 1.3rem;
+    text-align: left;
+    background: moccasin;
+}
+.team-front{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+	font-size: 1rem;
+    background: #fff;
+    z-index: 10;
+    transition: all 1s ease;
+}
+.our-team-main:hover .team-front{
+    bottom: -600px;
+    transition: all 1s ease;
+}
+.our-team-main:hover{
+    border-color: silver;
+}
+.buttons{
+	display: inline-block;
+	margin: 4rem auto 30px auto;
+    padding: 0.75rem 1rem 1rem 1rem;
+    border: white solid 0.1vw;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none !important;
+    color: white;
+    background-color: darkred;
+    vertical-align: super;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+.buttons:hover{
+    color: dimgrey;
+    background-color: burlywood;
+    cursor: pointer;
+}
+/* SIGN_UP */
+/* SIGN_IN */
+#signup h1, #signin h1{
+    margin: 2rem auto;
+    font-size: 2rem;
+}
+.content{
+    position: relative;
+    margin: 1vh 0 20px;
+    padding-bottom: 10px;
+    border-top: 1px solid darkred;
+    background-color: whitesmoke;
+}
+.buttonn{
+    margin: 10px auto;
+    padding: 10px 17px;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: darkred;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.buttonn:hover{
+    color: black;
+    background-color: wheat;
+    cursor: pointer;
+}
+.form-group{
+    padding: 0 10%;
+}
+.form-check-label{
+    font-size: 16px;
+}
+.form-check-label input:not([type=checkbox]){
+    min-height: 3vh;
+    height: 40px;
+    min-width: 40%;
+    width: 100%;
+    font-size: 18px;
+    color: #474747;
+    cursor: pointer;
+}
+input[type=checkbox]{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 10%;
+    cursor: pointer;
+}
+/* FRIENDS */
+#friends{
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: 70vh;
+    /*text-align: center;*/
+}
+#friends section{
+    flex: 0 1 auto;
+}
+#friends section:nth-of-type(1), #friends_request_search, #friends_request_list,
+#friends_neuws, #pub{
+    border: 1px solid lightgrey;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+#friends section:nth-of-type(1), #friends_request_search, #friends_request_list{
+    padding: 1rem;
+    background-color: whitesmoke;
+}
+#friends_request{
+    padding: 0;
+    margin: 0 0.5rem;
+}
+#friends_guest{
+    padding: 0;
+}
+#friends_neuws, #pub{
+    padding: 1rem;
+    background-color: whitesmoke;
+}
+#pub{
+    margin-top: 0.5rem;
+    height: 47.8vh;
+    background-color: transparent;
+    text-align: center;
+    color: lightgrey;
+    font-size: 1.2rem;
+}
+#friends_request_list{
+    margin-top: 0.5rem;
+    height: 53.3vh;
+}
+#friends_request_invite_pager, #friends_request_guest_pager{
+    height: 22.5vh;
+}
+#friends_guest{
+    
+}
+#friends #search_friends, #friends #search_request,
+#friends #search_friends_submit, #friends #search_request_submit,
+#friends #send_neuws, #friends #submit_neuws{
+    margin: 0;
+    display: inline-block !important;
+}
+#friends form{
+    background-color: transparent;
+    padding-bottom: 1rem;
+}
+#friends #search_friends, #friends #search_request{
+    width: 80%;
+}
+#friends #search_friends_submit, #friends #search_request_submit, #friends #submit_neuws{
+    padding: 0.25rem 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 1rem;
+    border: 0 solid darkred;
+    background-color: darkred;
+    color: white;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+#friends #search_friends_submit:hover, #friends #search_request_submit:hover, #friends #submit_neuws:hover{
+    background-color: burlywood;
+    color: white;
+}
+#friends #submit_neuws{
+    display: block !important;
+    margin: 1rem auto 0 auto;
+}
+.part1, .part2{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 100%;
+}
+.part1{
+    margin-bottom: 0.5rem; 
+}
+.part2{
+    margin-bottom: 0.5rem; 
+}
+.titleList {
+    font-size: 2.5vh;
+    margin-right: 10%;
+    font-family: louisBold;
+    color: #474747;
+}
+.subTitleList{
+    font-family: louisBold;
+    color: darkred;
+    text-align: center;
+    font-weight: bolder;
+    width: 100%;
+    font-size: 2vh;
+}
+.btn-darkred{
+    background-color: darkred;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    font-size: 15px;
+    padding: 5px;
+}
+.btn-darkred:hover{
+    background-color: burlywood;
+    border-radius: 25px;
+    border: none;
+}
+#friends .user_list{
+    margin: 0.5rem auto 0 auto;
+    padding: 0.5rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    max-width: 100%;
+    background-color: white;
+}
+#friends .img_fiche_profil, #friends .fiche_left{
+    float: left;
+}
+#friends .img_fiche_profil{
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 2px solid darkred;
+    background-color: transparent;
+}
+#friends .friends_infos{
+    display: inline-block;
+    padding: 1rem 0 0 1.5rem;
+    background-color: transparent;
+    vertical-align: top;
+    line-height: 1.1;
+}
+#friends .friends_firstname, #friends .friends_lastname{
+    font-family: Arial, sans-serif;
+    color: blue;
+    background-color: grey;
+    background-color: transparent;
+}
+#friends .friends_firstname{
+    text-transform: capitalize;
+    /*background-color: transparent;*/
+}
+#friends .friends_lastname{
+    text-transform: uppercase;
+    /*background-color: transparent;*/
+}
+#friends .friends_town{
+    text-transform: capitalize;
+    background-color: salmon;
+    background-color: transparent;
+}
+#friends .friends_profil{
+    text-transform: capitalize;
+}
+#friends .friends_account_public{
+    color: green;
+}
+#friends .friends_account_private{
+    color: red;
+}
+#friends .friends_infos p{
+    margin: 0;
+    padding: 0;
+}
+#friends .icon{
+    margin: 10px;
+    border: 0;
+    background-color: transparent;
+}
+#friends .icofont-check-circle{
+    font-size: 25px;
+    color: green;
+}
+#friends .icofont-close-circle{
+    font-size: 25px;
+    color: red;
+}
+#friends .icofont-email-circle{
+    font-size: 25px;
+    color: darkred;
+}
+#friends .friends_icon_list{
+    margin: 0 auto;
+    text-align: center;
+}
+#friends .friends_icon_list button{
+    border: 0;
+    background-color: transparent;
+}
+/* DATES */
+/* PROFIL */

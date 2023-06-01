@@ -1,0 +1,54 @@
+# REDIRECTION TO HTTPS
+# https://swingshift-examen.be
+#RewriteEngine On
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+
+# SET CSP HEADER
+#<IfModule mod_header.c>
+#	Header set Content-Security-Policy "upgrade-insecure-requests"
+#</IfModule>
+
+# HSTS HEADER
+# Recommanded value: 15778800 (half a year)
+# Public deployment: https://hstspreload.appspot.com/
+# @ voir doc ovh https
+#Header always set Strict-Transport-Security "maw-age=31557600; includeSubdomains; preload"
+#Header always set Strict-Transport-Security "maw-age=60; includeSubdomains;"
+
+
+
+
+# Protect .ht-files
+#<FilesMatches "^\.(htaccess|htpasswd)$">
+#	Deny from all
+#</Files>
+#
+# Blacklist IP
+#<Limit GET POST PUT HEAD>
+#	Order Allow, Deny
+#	Allow from all
+#	#Deny from 0.0.0.0
+#</Limit>
+#
+# Server
+#ServerSignature Off
+#
+# Index redirect
+#DirectoryIndex index.php
+#
+# Protect read dir and files
+#Options -Indexes
+#
+# URL Rewriting
+#<IfModule mod_rewrite.c>
+#	Option +FollowSymLinks
+#	RewriteEngine On
+#	RewriteCond %{QUERY_STRING} (<|%3C).*script malveillant.*(>|%3E) [NC.OR]
+#	RewriteCond %{QUERY_STRING} GLOBALS(=|[|%[0-9A-Z]{0,2}) [OR]
+#	RewriteCond %{QUERY_STRING} _REQUEST(=|[|%[0-9A-Z]{0,2})
+#	RewriteRule ^(.*)$ index.php [F,L]
+#</IfModule>
+#
+# ERROR pages
+#ErrorDocument 404 /ERROR/index.php?error=404

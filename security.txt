@@ -1,0 +1,7 @@
+Contact: mailto:trallocnivek@gmail.com, https://www.swingshift-examen.be?page=contact
+Preferred-Languages: be-fr
+Canonical: https://www.swingshift-examen.be/security.txt
+#Acknowledgments: https://www.swingshift-examen.be?page=well_known
+#Encryption: https://swingshift-examen.be?page=security
+#Policy: https://www.swingshift-examen.be?page=policy
+#Hiring https://www.swingshift-examen.be?page=hiring

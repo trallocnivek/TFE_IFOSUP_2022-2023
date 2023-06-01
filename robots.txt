@@ -1,0 +1,23 @@
+# robots.txt
+
+# robots list
+User-agent: *
+
+# delay between request
+Crawl-delay: 10
+
+# sitemaps
+Sitemap: /sitemap_index.xml
+
+# dir management
+Disallow: /*
+
+# file management
+Disallow: /*.pdf$
+Allow: /resources/technique.pdf$
+
+# authorizations
+Allow: /index.php$
+Allow: /page/*.php$
+
+Noindex: /

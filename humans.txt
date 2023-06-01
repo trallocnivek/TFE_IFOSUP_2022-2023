@@ -1,0 +1,16 @@
+/* TEAM */
+	Name: Collart Kevin
+	Contact: trallocnivek@gmail.com
+	From: Belgium
+	Work: UIDevelopper, WebMaster
+
+/* THANKS */
+	Group: SwingShift Big Band Hoeilaart
+	School: IFOSUP Wavre
+
+/* SITE */
+	Last Update: 2021/02/15
+	Standards: HTML5, CSS3, JS6, PHP7, SQL5, ...
+	Components: 
+	Language: Deutsch, English, Français (Belgium), Nederland (Belgium)
+	Software: SublimeText3, WampServer, GITHUB, Photoshop, FileZilla, ...

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>http://www.swingshift.be</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="http://www.swingshift.be?lang=de" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://www.swingshift.be?lang=en" />
+        <xhtml:link rel="alternate" hreflang="fr" href="http://www.swingshift.be?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="nl" href="http://www.swingshift.be?lang=nl" />
+    </url>
+    <url>
+        <loc>http://www.swingshift.be?page=group</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="http://www.swingshift.be?page=group&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://www.swingshift.be?page=group&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="fr" href="http://www.swingshift.be?page=group&amp;lang=fr" />
+        <xhtml:link rel="alternate" hreflang="nl" href="http://www.swingshift.be?page=group&amp;lang=nl" />
+    </url>
+    <url>
+        <loc>http://www.swingshift.be?page=diary</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="http://www.swingshift.be?page=diary&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://www.swingshift.be?page=diary&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="fr" href="http://www.swingshift.be?page=diary&amp;lang=fr" />
+        <xhtml:link rel="alternate" hreflang="nl" href="http://www.swingshift.be?page=diary&amp;lang=nl" />
+    </url>
+    <url>
+        <loc>http://www.swingshift.be?page=diary&amp;id=</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="http://www.swingshift.be?page=diary&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://www.swingshift.be?page=diary&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="fr" href="http://www.swingshift.be?page=diary&amp;lang=fr" />
+        <xhtml:link rel="alternate" hreflang="nl" href="http://www.swingshift.be?page=diary&amp;lang=nl" />
+    </url>
+    <url>
+        <loc>http://www.swingshift.be?page=gallery</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="http://www.swingshift.be?page=gallery&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://www.swingshift.be?page=gallery&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="fr" href="http://www.swingshift.be?page=gallery&amp;lang=fr" />
+        <xhtml:link rel="alternate" hreflang="nl" href="http://www.swingshift.be?page=gallery&amp;lang=nl" />
+    </url>
+    <url>
+        <loc>http://www.swingshift.be?page=gallery&amp;id=</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="http://www.swingshift.be?page=gallery&amp;id=&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://www.swingshift.be?page=gallery&amp;id=&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="fr" href="http://www.swingshift.be?page=gallery&amp;id=&amp;lang=fr" />
+        <xhtml:link rel="alternate" hreflang="nl" href="http://www.swingshift.be?page=gallery&amp;id=&amp;lang=nl" />
+    </url>
+    <url>
+        <loc>http://www.swingshift.be?page=demos</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="http://www.swingshift.be?page=demos&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://www.swingshift.be?page=demos&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="fr" href="http://www.swingshift.be?page=demos&amp;lang=fr" />
+        <xhtml:link rel="alternate" hreflang="nl" href="http://www.swingshift.be?page=demos&amp;lang=nl" />
+    </url>
+    <url>
+        <loc>http://www.swingshift.be?page=technical</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="http://www.swingshift.be?page=technical&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://www.swingshift.be?page=technical&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="fr" href="http://www.swingshift.be?page=technical&amp;lang=fr" />
+        <xhtml:link rel="alternate" hreflang="nl" href="http://www.swingshift.be?page=technical&amp;lang=nl" />
+    </url>
+    <url>
+        <loc>http://www.swingshift.be?page=contact</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="http://www.swingshift.be?page=contact&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://www.swingshift.be?page=contact&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="fr" href="http://www.swingshift.be?page=contact&amp;lang=fr" />
+        <xhtml:link rel="alternate" hreflang="nl" href="http://www.swingshift.be?page=contact&amp;lang=nl" />
+    </url>
+</urlset>

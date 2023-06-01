@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <!-- LOGO -->
+        <!-- SWINGSHIFT -->
+        <url>
+            <loc>http://www.swingshift.be</loc>
+            <image:image>
+                <image:loc>http://www.swingshift.be/img/logo/swingshift.png</image:loc>
+                <image:caption>Logo du SwingShift Big Band Hoeilaart (Belgique)</image:caption>
+                <image:geo_location>Hoeilaart, Belgique</image:geo_location>
+                <image:title>SwingShift Big Band</image:title>
+                <image:licence>http://www.swingshift.be/licence-photos.html</image:licence>
+            </image:image>
+        </url>
+    <!-- HOME PAGE -->
+    <url>
+        <loc>http://www.swingshift.be</loc>
+        <image:image>
+            <image:loc>http://www.swingshift.be/GROEP.jpg</image:loc>
+            <image:caption>Présentation du groupe</image:caption>
+            <image:geo_location>Hoeilaart, Belgique</image:geo_location>
+            <image:title>SwingShift Big Band</image:title>
+            <image:licence>http://www.swingshift.be/licence-photos.html</image:licence>
+        </image:image>
+    </url>
+</urlset>
